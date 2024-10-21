@@ -25,7 +25,7 @@ namespace TestGit_v1.DAL
         /// Ném ra khi có lỗi xảy ra trong quá trình kết nối hoặc truy vấn cơ sở dữ liệu.
         /// </exception>
         /// <exception cref="Exception">
-        /// Ném ra khi có lỗi khác không xác định xảy ra.
+        /// Ném ra khi có lỗi chung chung xác định xảy ra.
         /// </exception>
         public DataTable GetViewDiemTrungBinhSinhVien()
         {
@@ -49,10 +49,6 @@ namespace TestGit_v1.DAL
                 }
 
                 return danhSachDiemTrungBinh;
-            }
-            catch (SqlException)
-            {
-                throw;
             }
             catch (Exception ex)
             {
