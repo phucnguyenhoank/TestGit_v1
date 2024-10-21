@@ -31,6 +31,7 @@
             btnConnect = new Button();
             btnGet = new Button();
             dgvGotData = new DataGridView();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvGotData).BeginInit();
             SuspendLayout();
             // 
@@ -63,11 +64,21 @@
             dgvGotData.Size = new Size(650, 335);
             dgvGotData.TabIndex = 2;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(146, 374);
+            label1.Name = "label1";
+            label1.Size = new Size(162, 20);
+            label1.TabIndex = 3;
+            label1.Text = "Nội dung datagridview";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label1);
             Controls.Add(dgvGotData);
             Controls.Add(btnGet);
             Controls.Add(btnConnect);
@@ -75,6 +86,7 @@
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)dgvGotData).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -82,5 +94,6 @@
         private Button btnConnect;
         private Button btnGet;
         private DataGridView dgvGotData;
+        private Label label1;
     }
 }
