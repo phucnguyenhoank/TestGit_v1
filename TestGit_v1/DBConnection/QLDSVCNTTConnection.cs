@@ -49,5 +49,15 @@ namespace TestGit_v1.DBConnection
                 throw new Exception($"Error: {ex.Message}");
             }
         }
+
+        /// <summary>
+        /// Get number 1
+        /// </summary>
+        /// <returns>number 1</returns>
+        public static int GetNumberOne()
+        {
+            
+            return 1;
+        }
     }
 }
