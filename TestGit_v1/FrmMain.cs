@@ -4,9 +4,9 @@ using TestGit_v1.DBConnection;
 
 namespace TestGit_v1
 {
-    public partial class Form1 : Form
+    public partial class FrmMain : Form
     {
-        public Form1()
+        public FrmMain()
         {
             InitializeComponent();
         }
